@@ -1,6 +1,6 @@
-#include 
-#include 
-#include 
+#include<iostream.h>
+#include<string.h> 
+#include<template.h> 
 
 class Graph {
 private:
