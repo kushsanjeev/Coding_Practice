@@ -15,11 +15,15 @@ public:
             graph[u] = edge_map;
 
         } else {
+            isDirected = false;
             graph[u][v] = weight;
         }
 
         if (!isDirected) {
-            it = graph.find(v);
+             for (it = graph.begin(); it != graph.end(); ++it) {
+                 if(it->value == v)
+                     it = graph.get(v);
+             }
             if (it == graph.end()) {
                 std::map<int, int> edge_map;
                 edge_map[u] = weight;
