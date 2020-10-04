@@ -31,12 +31,12 @@ public:
         }
     }
 
-    void printGraph() {
-        std::map<int, std::map<int, int> >::iterator it;
-        std::map<int, int>::iterator it2;
-        for (it = graph.begin(); it != graph.end(); ++it) {
+    void print_graph(){
+         std::map<int, std::map<int, int> >::iterator i1;
+        std::map<int, int>::iterator i2;
+        for (i1 = graph.begin(); i1 != graph.end(); ++i1) {
             std::cout<first<<": ";
-            for (it2 = it->second.begin(); it2 != it->second.end(); ++it2) {
+            for (i2 = i1->second.begin(); i2 != i1->second.end(); ++i12) {
                 std::cout<<"("<first<<","<second<<")";
                 std::cout<<"   ";
             }
