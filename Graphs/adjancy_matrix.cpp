@@ -56,6 +56,9 @@ int main() {
     g.addEdge(4, 5, 10, false);
     g.addEdge(4, 6, 7, false);
     g.addEdge(5, 6, 4, false);
+    g.addEdge(5, 7, 5, true);
+    g.addEdge(5, 8, 6, true);
+    g.addEdge(5, 9, 7, true);
     g.printGraph();
     return 0;
 }
